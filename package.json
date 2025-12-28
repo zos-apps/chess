@@ -20,7 +20,25 @@
         "height": 700
       },
       "resizable": true
-    }
+    },
+    "about": "Classic chess game with AI opponent and beautiful piece designs.",
+    "help": [
+      "Click piece to select",
+      "Click destination to move",
+      "Invalid moves are prevented"
+    ],
+    "docs": "https://zos-apps.github.io/chess",
+    "site": "https://github.com/zos-apps/chess",
+    "shortcuts": [
+      "N New game",
+      "U Undo move"
+    ],
+    "features": [
+      "Play vs AI",
+      "Move validation",
+      "Captured pieces display",
+      "Game history"
+    ]
   },
   "scripts": {
     "build": "tsup",
@@ -53,5 +71,13 @@
     "chess",
     "macos",
     "desktop"
-  ]
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/zos-apps"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
