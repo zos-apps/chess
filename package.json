@@ -1,5 +1,5 @@
 {
-  "name": "@anthropic/chess",
+  "name": "@zos-apps/chess",
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -11,9 +11,14 @@
     "icon": "♟️",
     "category": "games",
     "description": "Classic chess with AI opponent",
-    "permissions": ["storage.local"],
+    "permissions": [
+      "storage.local"
+    ],
     "window": {
-      "defaultSize": { "width": 700, "height": 700 },
+      "defaultSize": {
+        "width": 700,
+        "height": 700
+      },
       "resizable": true
     }
   },
@@ -30,5 +35,23 @@
     "@types/react-dom": "^18.3.0",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
-  }
+  },
+  "description": "Classic chess with AI opponent",
+  "homepage": "https://zos-apps.github.io/chess",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zos-apps/chess.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/chess/issues"
+  },
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "keywords": [
+    "zos",
+    "app",
+    "chess",
+    "macos",
+    "desktop"
+  ]
 }
