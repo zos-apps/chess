@@ -1,8 +1,5 @@
-import React, { useState, useCallback, useEffect } from 'react';
-
-interface ChessProps {
-  onClose: () => void;
-}
+import { useState, useCallback } from 'react';
+import type { AppProps } from '@zos-apps/config';
 
 type PieceType = 'K' | 'Q' | 'R' | 'B' | 'N' | 'P' | 'k' | 'q' | 'r' | 'b' | 'n' | 'p' | null;
 type Board = PieceType[][];
@@ -31,7 +28,7 @@ const initialBoard = (): Board => [
 const isWhite = (piece: PieceType): boolean => piece !== null && piece === piece.toUpperCase();
 const isBlack = (piece: PieceType): boolean => piece !== null && piece === piece.toLowerCase();
 
-const Chess: React.FC<ChessProps> = ({ onClose }) => {
+const Chess: React.FC<AppProps> = ({ onClose: _onClose }) => {
   const [board, setBoard] = useState<Board>(initialBoard);
   const [selected, setSelected] = useState<[number, number] | null>(null);
   const [turn, setTurn] = useState<'white' | 'black'>('white');
